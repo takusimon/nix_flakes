@@ -40,6 +40,12 @@
           "Mod+Up".focus-window-up = _:{};
           "Mod+Down".focus-window-down = _:{};
 	  "Mod+W".toggle-column-tabbed-display = _:{};
+	  "Mod+Shift+Space".switch-focus-between-floating-and-tiling = _:{};
+	  "Mod+Period".consume-or-expel-window-right = _:{};
+	  "Mod+Comma".consume-or-expel-window-left = _:{};
+	  "Mod+Shift+Period".consume-or-expel-window-right = _:{};
+	  "Mod+Shift+Comma".consume-or-expel-window-left = _:{};
+
 
           "Mod+Shift+H".move-column-left = _:{};
           "Mod+Shift+L".move-column-right = _: {};
