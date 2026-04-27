@@ -6,13 +6,13 @@ programs.hyprland = {
 	xwayland.enable = true;
 };
 
-programs.hypridle.enable = true;
+services.hypridle.enable = true;
 programs.hyprlock.enable = true;
 
 environment.systemPackages = with pkgs; [
 	rofi
 	waybar
-	swaynofiticationcenter
+	swaynotificationcenter
 	wlogout
 	cliphist
 	wl-clipboard
