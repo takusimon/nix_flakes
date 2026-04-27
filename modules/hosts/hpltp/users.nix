@@ -19,6 +19,8 @@ in
 	obsidian
 	starship
 	btop
+	cliphist
+	wl-clipboard
      ];
    shell = pkgs.fish;
    };
