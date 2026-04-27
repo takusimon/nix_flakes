@@ -16,6 +16,7 @@
       self.nixosModules.sysenv
       self.nixosModules.nixconf
       self.nixosModules.myMachineHardware
+      self.nixosModules.kde
       self.nixosModules.hyprland
     ];
 
