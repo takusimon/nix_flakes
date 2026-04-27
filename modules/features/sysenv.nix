@@ -9,7 +9,7 @@
 	gnumake
 	gcc
 	fish
-	gnomeExtensions.paperwm
+	trash-cli
    ];
   };
 }
