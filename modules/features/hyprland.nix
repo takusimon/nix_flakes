@@ -29,13 +29,15 @@ environment.systemPackages = with pkgs; [
 	xdg-desktop-portal-gtk
 	xdg-user-dirs
 	brightnessctl
+	hyprpolkitagent
 ];
   services.dbus.enable = true;
-  services.displayManager.sddm.enable = true;
-  services.displayManager.sddm.wayland.enable = true;
+  services.displayManager.gdm.enable = true;
+  services.displayManager.gdm.wayland = true;
   services.xserver.enable = true;
   services.power-profiles-daemon.enable = true;
   services.openssh.enable = true;
+  services.upower.enable = true;
   
   programs.firefox.enable = true;
   programs.fish.enable = true;
