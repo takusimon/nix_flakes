@@ -9,10 +9,13 @@ in
      isNormalUser = true;
      extraGroups = [ "wheel" ]; # Enable ‘sudo’ for the user.
      packages = with pkgs; [
-	onlyoffice-desktopeditors
 	vscode
+	discord
+	libreoffice
 	anki
 	obsidian
+	discord
+	steam
      ];
    shell = pkgs.fish;
    };

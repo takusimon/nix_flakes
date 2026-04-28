@@ -31,6 +31,7 @@ environment.systemPackages = with pkgs; [
 	brightnessctl
 	hyprpolkitagent
 	nwg-look
+	hyprland-qt-support
 ];
   services.dbus.enable = true;
   services.displayManager.gdm.enable = true;
@@ -44,7 +45,7 @@ environment.systemPackages = with pkgs; [
   programs.fish.enable = true;
   security.polkit.enable = true;
   programs.thunar.enable = true;
-  networking.networkmanager.enable = true;o
-  hardware.bluetooth.enable
+  networking.networkmanager.enable = true;
+  hardware.bluetooth.enable = true;
 };
 }
