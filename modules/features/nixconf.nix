@@ -5,6 +5,10 @@
   
   # enable flakes
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
+ 
+  # automatic upgrades
+  system.autoUpgrade.enable = true;
+  system.autoUpgrade.allowReboot = true;
 
   };
 }

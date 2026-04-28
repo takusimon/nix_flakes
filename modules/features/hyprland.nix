@@ -30,6 +30,7 @@ environment.systemPackages = with pkgs; [
 	xdg-user-dirs
 	brightnessctl
 	hyprpolkitagent
+	nwg-look
 ];
   services.dbus.enable = true;
   services.displayManager.gdm.enable = true;
@@ -43,5 +44,7 @@ environment.systemPackages = with pkgs; [
   programs.fish.enable = true;
   security.polkit.enable = true;
   programs.thunar.enable = true;
+  networking.networkmanager.enable = true;o
+  hardware.bluetooth.enable
 };
 }
