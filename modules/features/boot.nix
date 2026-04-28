@@ -7,6 +7,7 @@
   boot.loader.grub.timeoutStyle = "menu";
   boot.loader.efi.efiSysMountPoint = "/boot";
   boot.loader.efi.canTouchEfiVariables = true;
+  boot.loader.grub.configurationLimit = 5;
   };
 }
 
