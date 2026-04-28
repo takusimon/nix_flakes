@@ -9,18 +9,10 @@ in
      isNormalUser = true;
      extraGroups = [ "wheel" ]; # Enable ‘sudo’ for the user.
      packages = with pkgs; [
-       tree
-	kitty
-	tmux
-	fastfetch
 	onlyoffice-desktopeditors
 	vscode
 	anki
 	obsidian
-	starship
-	btop
-	cliphist
-	wl-clipboard
      ];
    shell = pkgs.fish;
    };

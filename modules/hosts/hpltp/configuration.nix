@@ -10,13 +10,8 @@
       # External features
       self.nixosModules.boot
       self.nixosModules.fonts
-      self.nixosModules.gnome
-      self.nixosModules.services
-      self.nixosModules.programs
-      self.nixosModules.sysenv
       self.nixosModules.nixconf
       self.nixosModules.myMachineHardware
-      self.nixosModules.kde
       self.nixosModules.hyprland
     ];
 

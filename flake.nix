@@ -6,12 +6,21 @@
     import-tree.url = "github:vic/import-tree";
 
     wrapper-modules.url = "github:BirdeeHub/nix-wrapper-modules";
+
+    noctalia = {
+      url = "github:noctalia-dev/noctalia-shell";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
   };
 
   outputs = inputs: inputs.flake-parts.lib.mkFlake
     { inherit inputs; }
  {
         systems = [ "x86_64-linux" ];  
+
+	_module.args = {
+          inherit inputs;
+        };
 
         imports = [
           (inputs.import-tree ./modules)
