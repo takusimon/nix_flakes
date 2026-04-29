@@ -14,13 +14,14 @@ flake.nixosModules.env = {pkgs, ...}: {
 			git
 			wget
 			vim
+			gnutar
+			kitty
+			yazi
+			
 		];
-		gnome.excludePackages = with pkgs; [
-			epiphany
-			gnome-tour
-			gnome-maps
-			gnome-contacts
-			gnome-connections
+		plasma6.excludePackages = with pkgs; [
+			kdePackages.konsole
 		];
 	};
+};
 }

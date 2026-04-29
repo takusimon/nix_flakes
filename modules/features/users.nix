@@ -7,7 +7,7 @@
         packages = with pkgs; [
 		vscode
 		discord
-		libreoffice
+		onlyoffice-desktopeditors
 		anki
 		obsidian
 		discord

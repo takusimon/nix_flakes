@@ -8,7 +8,7 @@
 		}; 
 	nix = {
 		settings = {
-			experimental-features = [ "nix-commad" "flakes" ];
+			experimental-features = [ "nix-command" "flakes" ];
 			};
 		optimise = {
 			automatic = true;

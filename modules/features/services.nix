@@ -2,13 +2,13 @@
 flake.nixosModules.services = {config,pkgs,...}: {
 	services = {
 		displayManager = {
-			gdm = {
+			sddm = {
 				enable = true;
-				wayland = true;
+				wayland.enable = true;
 				};
 			};
 		desktopManager = {
-			gnome.enable = true;
+			plasma6.enable = true;
 			};
 		xserver.enable = true;
 		power-profiles-daemon.enable = true;

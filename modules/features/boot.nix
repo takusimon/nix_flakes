@@ -4,7 +4,7 @@
 	loader = {
 		grub = {
 			enable = true;
-			efisupport = true;
+			efiSupport = true;
 			device = "nodev";
 			timeoutStyle = "menu";
 			configurationLimit = 10;
