@@ -7,32 +7,6 @@ programs.hyprland = {
 };
 
 
-environment.systemPackages = with pkgs; [
-	starship
-	tree
-	fastfetch
-	btop
-	kitty
-	cliphist
-	tmux
-	zip
-	unzip
-	fish
- 	trash-cli
-	git
-	wget
-	wl-clipboard
-	inputs.noctalia.packages.${pkgs.system}.default
-	vim
-	hyprshot
-	xdg-desktop-portal-hyprland
-	xdg-desktop-portal-gtk
-	xdg-user-dirs
-	brightnessctl
-	nwg-look
-	polkit_gnome
-	hyprland-qt-support
-];
   services.dbus.enable = true;
   services.displayManager.gdm.enable = true;
   services.displayManager.gdm.wayland = true;

@@ -5,14 +5,16 @@
     imports = [
       self.nixosModules.myMachineHardware
       self.nixosModules.host
-      self.nixosModules.users
 
       # External features
-      self.nixosModules.boot
-      self.nixosModules.fonts
-      self.nixosModules.nixconf
-      self.nixosModules.myMachineHardware
-      self.nixosModules.hyprland
+	self.nixosModules.boot
+	self.nixosModules.env
+	self.nixosModules.users
+	self.nixosModules.services
+	self.nixosModules.programs
+	self.nixosModules.fonts
+	self.nixosModules.nixconf
+     
     ];
 
 

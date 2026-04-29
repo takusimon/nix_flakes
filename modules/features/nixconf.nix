@@ -1,24 +1,29 @@
 { self, inputs, ... }: {
-  flake.nixosModules.nixconf = { pkgs, ... }: {
-  # Enable unfree packages
-  nixpkgs.config.allowUnfree = true;
-  
-  # enable flakes
-  nix.settings.experimental-features = [ "nix-command" "flakes" ];
+  flake.nixosModules.nixconf = { config,pkgs, ... }: {
 
-  # periodic optimization of nix-store
-  nix.optimise.automatic = true;
-
-  # automatic garbage collection
-  nix.gc = {
-  automatic = true;
-  dates = "weekly";
-  options = "--delete-older-than 7d";
-};
- 
-  # automatic upgrades
-  system.autoUpgrade.enable = true;
-  system.autoUpgrade.allowReboot = true;
-
+	nixpkgs = {
+		config = {
+			allowUnfree = true;
+			};
+		}; 
+	nix = {
+		settings = {
+			experimental-features = [ "nix-commad" "flakes" ];
+			};
+		optimise = {
+			automatic = true;
+			};
+		gc = {
+			automatic = true;
+			dates = "weekly";
+			options = "--delete-older-than 7d";
+			};
+		};
+	system = {
+		autoUpgrade = {
+			enable = true;
+			allowReboot = true;
+			};
+		};
   };
 }
