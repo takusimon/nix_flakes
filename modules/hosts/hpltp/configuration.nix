@@ -14,8 +14,6 @@
 	self.nixosModules.programs
 	self.nixosModules.fonts
 	self.nixosModules.nixconf
-	self.nixosModules.dank
-	
      
     ];
 

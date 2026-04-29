@@ -8,15 +8,28 @@
 
         border {
         width 1
-        }
+    }
 
         focus-ring {
         width 1
-        }
-        }
+    }
+}
         window-rule {
-        geometry-corner-radius 12
-        clip-to-geometry true
-        tiled-state true
-        draw-border-with-background false
-        }
+    geometry-corner-radius 15
+    clip-to-geometry true
+    draw-border-with-background false
+    opacity 0.8
+    background-effect {
+        blur true
+    }
+    tiled-state true
+}
+
+window-rule {
+    match is-focused=true
+    background-effect {
+        blur true
+    }
+}
+
+window-rule { match app-id=r"^firefox" title=r"YouTube" is-active=true; }

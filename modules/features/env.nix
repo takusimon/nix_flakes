@@ -17,12 +17,9 @@ flake.nixosModules.env = {pkgs, ...}: {
 			gnutar
 			kitty
 			yazi
-			sddm-astronaut
-			kdePackages.qtmultimedia
+			niri
+			inputs.nirimod.packages.${pkgs.system}.default
 			
-		];
-		plasma6.excludePackages = with pkgs; [
-			kdePackages.konsole
 		];
 	};
 };

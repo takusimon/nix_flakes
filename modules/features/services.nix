@@ -10,6 +10,10 @@ flake.nixosModules.services = {config,pkgs,...}: {
 		xserver.enable = true;
 		power-profiles-daemon.enable = true;
 		openssh.enable = true;
-		};
+		upower.enable = true;
+	};
+	hardware = {
+		bluetooth.enable = true;
+	};
 };
 }

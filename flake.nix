@@ -6,11 +6,7 @@
     import-tree.url = "github:vic/import-tree";
 
     wrapper-modules.url = "github:BirdeeHub/nix-wrapper-modules";
-
-    noctalia = {
-      url = "github:noctalia-dev/noctalia-shell";
-      inputs.nixpkgs.follows = "nixpkgs";
-    };
+    nirimod.url = "github:srinivasr/nirimod";
   };
 
   outputs = inputs: inputs.flake-parts.lib.mkFlake
