@@ -11,6 +11,8 @@
 		obsidian
 		discord
 		steam
+		conda
+		kdePackages.okular
         ];
    };
 };

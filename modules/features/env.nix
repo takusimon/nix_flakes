@@ -19,6 +19,8 @@ flake.nixosModules.env = {pkgs, ...}: {
 			yazi
 			niri
 			inputs.nirimod.packages.${pkgs.system}.default
+			gnumake
+			gcc
 			
 		];
 	};

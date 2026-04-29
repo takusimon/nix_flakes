@@ -15,21 +15,11 @@
     }
 }
         window-rule {
-    geometry-corner-radius 15
+    geometry-corner-radius 12
     clip-to-geometry true
     draw-border-with-background false
-    opacity 0.8
     background-effect {
         blur true
     }
     tiled-state true
 }
-
-window-rule {
-    match is-focused=true
-    background-effect {
-        blur true
-    }
-}
-
-window-rule { match app-id=r"^firefox" title=r"YouTube" is-active=true; }
