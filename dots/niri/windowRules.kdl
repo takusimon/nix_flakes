@@ -1,0 +1,54 @@
+window-rule {
+	opacity 0.85 
+	
+	 draw-border-with-background false
+
+	focus-ring {
+		off
+	}
+
+	border {
+		on
+		width 1	
+		active-color "#f9e2af"
+		inactive-color "#45475a"
+	}
+
+	tab-indicator {
+		active-color "#f38ba8"
+		
+	}
+	
+	geometry-corner-radius 15
+	clip-to-geometry true
+	tiled-state true
+
+	background-effect {
+		blur true
+		noise 0.05
+		saturation 0
+	}
+
+	popups {
+		opacity 0.9
+		geometry-corner-radius 15
+		
+		background-effect {
+			blur true
+			noise 0.05
+		}	
+	}
+}
+
+window-rule {
+	match app-id="firefox" title="YouTube"
+
+	opacity 1.0
+
+}
+
+window-rule {
+	match app-id="anki"
+
+	default-column-display "tabbed"
+}
