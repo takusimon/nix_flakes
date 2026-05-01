@@ -26,6 +26,9 @@ set tabstop=4
 set wildmenu
 set wildmode=list:longest
 
+set termguicolors
+colorscheme catppuccin_mocha
+
 " PLUGINS ---------------------------------------------------------------- {{{
 
 " Plugin code goes here.
