@@ -25,6 +25,7 @@ flake.nixosModules.services = {config,pkgs,...}: {
     }
 		xserver.enable = true;
     tlp.enable = true;
+    gnome.gnome-keyring.enable = true;
 		openssh.enable = true;
 		upower.enable = true;
 	};

@@ -20,6 +20,7 @@
     hyprpaper
     hyprlock
     hypridle
+    nautilus
         ];
    };
 };
