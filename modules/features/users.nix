@@ -6,15 +6,20 @@
 	extraGroups = [ "wheel" "networkmanager" ]; # Enable ‘sudo’ for the user.
         packages = with pkgs; [
 		discord
-		libreoffice
 		obsidian
-		discord
-		steam
 		conda
-		kdePackages.okular
 		google-chrome
 		anki
-		vscode
+    fuzzel
+    waybar
+    xdg-desktop-portal-gnome
+    xdg-desktop-portal
+    wl-clipboard
+    cliphist
+    dunst
+    hyprpaper
+    hyprlock
+    hypridle
         ];
    };
 };

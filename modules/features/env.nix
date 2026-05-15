@@ -10,6 +10,7 @@ flake.nixosModules.env = {pkgs, ...}: {
 			zip
 			unzip
 			trash-cli
+      sddm-astronaut
 			git
 			wget
 			vim
@@ -17,7 +18,6 @@ flake.nixosModules.env = {pkgs, ...}: {
 			kitty
 			yazi
 			niri
-			inputs.nirimod.packages.${pkgs.system}.default
 			gnumake
 			gcc
 			ripgrep
@@ -27,6 +27,7 @@ flake.nixosModules.env = {pkgs, ...}: {
 			zoxide	
 			ncdu
 			cups-pk-helper
+      btop
 		];
 	};
 };

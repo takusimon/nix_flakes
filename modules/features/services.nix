@@ -2,14 +2,29 @@
 flake.nixosModules.services = {config,pkgs,...}: {
 	services = {
 		displayManager = {
-			dms-greeter = {
+			sddm = {
 				enable = true;
-				compositor.name = "niri";
-				configHome = "/home/taku";
+        wayland.enable = true;
+        theme = "sddm-astronaut";
 			};
-			};
+		};
+    pipewire = {
+
+    enable = true;
+
+    audio = {
+        enable = true;
+      };
+
+    wireplumber = {
+      enable = true;
+    };
+    
+    system-wide = true;
+
+    }
 		xserver.enable = true;
-		power-profiles-daemon.enable = true;
+    tlp.enable = true;
 		openssh.enable = true;
 		upower.enable = true;
 	};
